@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Salt ràpid per pàgines llargues",
+    "description": "Nom de l'extensió kanGO"
+  },
+  "extension_description": {
+    "message": "Navega pel teu contingut fàcilment amb kanGO!",
+    "description": "Descripció de l'extensió kanGO"
+  },
+  "add_hop": {
+    "message": "Afegeix salt...",
+    "description": "Element de menú per afegir un nou salt"
+  },
+  "wrong_page": {
+    "message": "No pots afegir salts en aquesta pàgina",
+    "description": "Missatge quan s'intenta afegir un salt en una pàgina no compatible"
+  },
+  "no_hops": {
+    "message": "No hi ha salts en aquesta pàgina. Afegeix el primer fent clic dret sobre l'element.",
+    "description": "Missatge quan no hi ha salts disponibles en la pàgina actual"
+  },
+  "hop_title": {
+    "message": "Títol:",
+    "description": "Etiqueta per al camp de títol del salt en el modal"
+  },
+  "hop_color": {
+    "message": "Color:",
+    "description": "Etiqueta per a la selecció de color del salt en el modal"
+  },
+  "add_hop_button": {
+    "message": "Afegeix salt",
+    "description": "Text del botó per afegir un nou salt en el modal"
+  },
+  "cancel_button": {
+    "message": "Cancel·la",
+    "description": "Text del botó per cancel·lar l'afegiment d'un salt en el modal"
+  }
+}

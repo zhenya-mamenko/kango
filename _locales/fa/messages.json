@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — پرش‌های سریع برای صفحات طولانی",
+    "description": "نام افزونه kanGO"
+  },
+  "extension_description": {
+    "message": "به راحتی با kanGO در محتوای خود حرکت کنید!",
+    "description": "توضیحات افزونه kanGO"
+  },
+  "add_hop": {
+    "message": "افزودن پرش...",
+    "description": "گزینه منو برای افزودن پرش جدید"
+  },
+  "wrong_page": {
+    "message": "نمی‌توانید در این صفحه پرش اضافه کنید",
+    "description": "پیام هنگام تلاش برای افزودن پرش در صفحه پشتیبانی نشده"
+  },
+  "no_hops": {
+    "message": "در این صفحه پرشی وجود ندارد. اولین را با کلیک راست روی عنصر اضافه کنید.",
+    "description": "پیام هنگام نبود پرش در صفحه فعلی"
+  },
+  "hop_title": {
+    "message": "عنوان:",
+    "description": "برچسب فیلد عنوان پرش در مودال"
+  },
+  "hop_color": {
+    "message": "رنگ:",
+    "description": "برچسب انتخاب رنگ پرش در مودال"
+  },
+  "add_hop_button": {
+    "message": "افزودن پرش",
+    "description": "متن دکمه برای افزودن پرش جدید در مودال"
+  },
+  "cancel_button": {
+    "message": "لغو",
+    "description": "متن دکمه برای لغو افزودن پرش در مودال"
+  }
+}

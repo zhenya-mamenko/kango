@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Snabba hopp för långa sidor",
+    "description": "Namnet på kanGO-tillägget"
+  },
+  "extension_description": {
+    "message": "Navigera enkelt genom ditt innehåll med kanGO!",
+    "description": "Beskrivning av kanGO-tillägget"
+  },
+  "add_hop": {
+    "message": "Lägg till hopp...",
+    "description": "Menyval för att lägga till ett nytt hopp"
+  },
+  "wrong_page": {
+    "message": "Du kan inte lägga till hopp på denna sida",
+    "description": "Meddelande när användaren försöker lägga till hopp på en ej stödd sida"
+  },
+  "no_hops": {
+    "message": "Inga hopp på denna sida. Lägg till det första genom att högerklicka på elementet.",
+    "description": "Meddelande när det inte finns några hopp på den aktuella sidan"
+  },
+  "hop_title": {
+    "message": "Titel:",
+    "description": "Etikett för hopp-titel i modal"
+  },
+  "hop_color": {
+    "message": "Färg:",
+    "description": "Etikett för val av hopp-färg i modal"
+  },
+  "add_hop_button": {
+    "message": "Lägg till hopp",
+    "description": "Knapptext för att lägga till ett nytt hopp i modal"
+  },
+  "cancel_button": {
+    "message": "Avbryt",
+    "description": "Knapptext för att avbryta tillägg av hopp i modal"
+  }
+}

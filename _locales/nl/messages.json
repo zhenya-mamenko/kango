@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Snelle sprongen voor lange pagina's",
+    "description": "Naam van de kanGO-extensie"
+  },
+  "extension_description": {
+    "message": "Navigeer eenvoudig door je inhoud met kanGO!",
+    "description": "Beschrijving van de kanGO-extensie"
+  },
+  "add_hop": {
+    "message": "Sprong toevoegen...",
+    "description": "Menu-item om een nieuwe sprong toe te voegen"
+  },
+  "wrong_page": {
+    "message": "Je kunt geen sprongen toevoegen op deze pagina",
+    "description": "Bericht wanneer je probeert een sprong toe te voegen op een niet-ondersteunde pagina"
+  },
+  "no_hops": {
+    "message": "Geen sprongen op deze pagina. Voeg de eerste toe door met de rechtermuisknop op het element te klikken.",
+    "description": "Bericht wanneer er geen sprongen beschikbaar zijn op de huidige pagina"
+  },
+  "hop_title": {
+    "message": "Titel:",
+    "description": "Label voor het invoerveld van de sprongtitel in de modal"
+  },
+  "hop_color": {
+    "message": "Kleur:",
+    "description": "Label voor de kleurselectie van de sprong in de modal"
+  },
+  "add_hop_button": {
+    "message": "Sprong toevoegen",
+    "description": "Knoptekst om een nieuwe sprong toe te voegen in de modal"
+  },
+  "cancel_button": {
+    "message": "Annuleren",
+    "description": "Knoptekst om het toevoegen van een sprong in de modal te annuleren"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Sărituri rapide pentru pagini lungi",
+    "description": "Numele extensiei kanGO"
+  },
+  "extension_description": {
+    "message": "Navighează ușor prin conținutul tău cu kanGO!",
+    "description": "Descrierea extensiei kanGO"
+  },
+  "add_hop": {
+    "message": "Adaugă săritură...",
+    "description": "Element de meniu pentru adăugarea unei sărituri noi"
+  },
+  "wrong_page": {
+    "message": "Nu poți adăuga sărituri pe această pagină",
+    "description": "Mesaj afișat când se încearcă adăugarea unei sărituri pe o pagină neacceptată"
+  },
+  "no_hops": {
+    "message": "Nu există sărituri pe această pagină. Adaugă prima prin click dreapta pe element.",
+    "description": "Mesaj afișat când nu există sărituri disponibile pe pagina curentă"
+  },
+  "hop_title": {
+    "message": "Titlu:",
+    "description": "Etichetă pentru câmpul titlu săritură în modal"
+  },
+  "hop_color": {
+    "message": "Culoare:",
+    "description": "Etichetă pentru selecția culorii săriturii în modal"
+  },
+  "add_hop_button": {
+    "message": "Adaugă săritură",
+    "description": "Textul butonului pentru adăugarea unei sărituri noi în modal"
+  },
+  "cancel_button": {
+    "message": "Anulează",
+    "description": "Textul butonului pentru anularea adăugării unei sărituri în modal"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Fast hops for long pages",
+    "description": "The name of the kanGO extension"
+  },
+  "extension_description": {
+    "message": "Conveniently navigate through your content with kanGO!",
+    "description": "Description of the kanGO extension"
+  },
+  "add_hop": {
+    "message": "Add hop...",
+    "description": "Menuitem to add a new hop"
+  },
+  "wrong_page": {
+    "message": "You can't add hops on this page",
+    "description": "Message shown when the user tries to add a hop on an unsupported page"
+  },
+  "no_hops": {
+    "message": "No hops on this page. Add the first one by right-clicking on the element.",
+    "description": "Message shown when there are no hops available on the current page"
+  },
+  "hop_title": {
+    "message": "Title:",
+    "description": "Label for the hop title input field in the modal"
+  },
+  "hop_color": {
+    "message": "Colour:",
+    "description": "Label for the hop colour selection in the modal"
+  },
+  "add_hop_button": {
+    "message": "Add Hop",
+    "description": "Button text to add a new hop in the modal"
+  },
+  "cancel_button": {
+    "message": "Cancel",
+    "description": "Button text to cancel adding a hop in the modal"
+  }
+}

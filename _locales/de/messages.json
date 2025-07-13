@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Schnelle Sprünge für lange Seiten",
+    "description": "Name der kanGO-Erweiterung"
+  },
+  "extension_description": {
+    "message": "Navigieren Sie bequem durch Ihre Inhalte mit kanGO!",
+    "description": "Beschreibung der kanGO-Erweiterung"
+  },
+  "add_hop": {
+    "message": "Sprung hinzufügen...",
+    "description": "Menüpunkt zum Hinzufügen eines neuen Sprungs"
+  },
+  "wrong_page": {
+    "message": "Sie können auf dieser Seite keine Sprünge hinzufügen",
+    "description": "Meldung beim Versuch, einen Sprung auf einer nicht unterstützten Seite hinzuzufügen"
+  },
+  "no_hops": {
+    "message": "Keine Sprünge auf dieser Seite. Fügen Sie den ersten durch Rechtsklick auf das Element hinzu.",
+    "description": "Meldung, wenn auf der aktuellen Seite keine Sprünge vorhanden sind"
+  },
+  "hop_title": {
+    "message": "Titel:",
+    "description": "Beschriftung für das Sprungtitel-Feld im Modal"
+  },
+  "hop_color": {
+    "message": "Farbe:",
+    "description": "Beschriftung für die Farbauswahl des Sprungs im Modal"
+  },
+  "add_hop_button": {
+    "message": "Sprung hinzufügen",
+    "description": "Buttontext zum Hinzufügen eines neuen Sprungs im Modal"
+  },
+  "cancel_button": {
+    "message": "Abbrechen",
+    "description": "Buttontext zum Abbrechen des Hinzufügens eines Sprungs im Modal"
+  }
+}

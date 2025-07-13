@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Mabilis na lundag para sa mahahabang pahina",
+    "description": "Pangalan ng kanGO extension"
+  },
+  "extension_description": {
+    "message": "Maginhawang mag-navigate sa iyong nilalaman gamit ang kanGO!",
+    "description": "Paglalarawan ng kanGO extension"
+  },
+  "add_hop": {
+    "message": "Magdagdag ng lundag...",
+    "description": "Menu item para magdagdag ng bagong lundag"
+  },
+  "wrong_page": {
+    "message": "Hindi ka makakapagdagdag ng lundag sa pahinang ito",
+    "description": "Mensahe kapag sinubukan magdagdag ng lundag sa hindi suportadong pahina"
+  },
+  "no_hops": {
+    "message": "Walang lundag sa pahinang ito. Magdagdag ng una sa pamamagitan ng right-click sa elemento.",
+    "description": "Mensahe kapag walang lundag sa kasalukuyang pahina"
+  },
+  "hop_title": {
+    "message": "Pamagat:",
+    "description": "Label para sa pamagat ng lundag sa modal"
+  },
+  "hop_color": {
+    "message": "Kulay:",
+    "description": "Label para sa pagpili ng kulay ng lundag sa modal"
+  },
+  "add_hop_button": {
+    "message": "Magdagdag ng lundag",
+    "description": "Teksto ng button para magdagdag ng bagong lundag sa modal"
+  },
+  "cancel_button": {
+    "message": "Kanselahin",
+    "description": "Teksto ng button para kanselahin ang pagdagdag ng lundag sa modal"
+  }
+}

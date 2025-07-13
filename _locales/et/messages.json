@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Kiired hüpped pikkadele lehtedele",
+    "description": "kanGO laienduse nimi"
+  },
+  "extension_description": {
+    "message": "Liigu mugavalt oma sisus kanGO abil!",
+    "description": "kanGO laienduse kirjeldus"
+  },
+  "add_hop": {
+    "message": "Lisa hüpe...",
+    "description": "Menüüelement uue hüppe lisamiseks"
+  },
+  "wrong_page": {
+    "message": "Sellel lehel ei saa hüppeid lisada",
+    "description": "Teade, kui üritatakse lisada hüpet toetamata lehele"
+  },
+  "no_hops": {
+    "message": "Sellel lehel pole hüppeid. Lisa esimene, klõpsates elemendil paremklõpsuga.",
+    "description": "Teade, kui praegusel lehel pole hüppeid"
+  },
+  "hop_title": {
+    "message": "Pealkiri:",
+    "description": "Sildi hüppe pealkirja sisestusvälja jaoks modaalis"
+  },
+  "hop_color": {
+    "message": "Värv:",
+    "description": "Sildi hüppe värvi valiku jaoks modaalis"
+  },
+  "add_hop_button": {
+    "message": "Lisa hüpe",
+    "description": "Nupu tekst uue hüppe lisamiseks modaalis"
+  },
+  "cancel_button": {
+    "message": "Tühista",
+    "description": "Nupu tekst hüppe lisamise tühistamiseks modaalis"
+  }
+}

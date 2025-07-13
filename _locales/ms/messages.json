@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Lompatan pantas untuk halaman panjang",
+    "description": "Nama sambungan kanGO"
+  },
+  "extension_description": {
+    "message": "Navigasi kandungan anda dengan mudah menggunakan kanGO!",
+    "description": "Deskripsi sambungan kanGO"
+  },
+  "add_hop": {
+    "message": "Tambah lompatan...",
+    "description": "Item menu untuk menambah lompatan baru"
+  },
+  "wrong_page": {
+    "message": "Anda tidak boleh menambah lompatan pada halaman ini",
+    "description": "Mesej apabila cuba menambah lompatan pada halaman yang tidak disokong"
+  },
+  "no_hops": {
+    "message": "Tiada lompatan pada halaman ini. Tambah yang pertama dengan klik kanan pada elemen.",
+    "description": "Mesej apabila tiada lompatan pada halaman semasa"
+  },
+  "hop_title": {
+    "message": "Tajuk:",
+    "description": "Label untuk medan tajuk lompatan dalam modals"
+  },
+  "hop_color": {
+    "message": "Warna:",
+    "description": "Label untuk pemilihan warna lompatan dalam modals"
+  },
+  "add_hop_button": {
+    "message": "Tambah lompatan",
+    "description": "Teks butang untuk menambah lompatan baru dalam modals"
+  },
+  "cancel_button": {
+    "message": "Batal",
+    "description": "Teks butang untuk membatalkan penambahan lompatan dalam modals"
+  }
+}

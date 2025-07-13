@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Nopeat hypyt pitkille sivuille",
+    "description": "kanGO-laajennuksen nimi"
+  },
+  "extension_description": {
+    "message": "Navigoi kätevästi sisällössäsi kanGO:lla!",
+    "description": "kanGO-laajennuksen kuvaus"
+  },
+  "add_hop": {
+    "message": "Lisää hyppy...",
+    "description": "Valikkokohta uuden hypyn lisäämiseen"
+  },
+  "wrong_page": {
+    "message": "Et voi lisätä hyppyjä tällä sivulla",
+    "description": "Viesti, kun yritetään lisätä hyppyä ei-tuetulle sivulle"
+  },
+  "no_hops": {
+    "message": "Tällä sivulla ei ole hyppyjä. Lisää ensimmäinen napsauttamalla elementtiä oikealla painikkeella.",
+    "description": "Viesti, kun nykyisellä sivulla ei ole hyppyjä"
+  },
+  "hop_title": {
+    "message": "Otsikko:",
+    "description": "Hyppyn otsikkokentän nimilappu modaalissa"
+  },
+  "hop_color": {
+    "message": "Väri:",
+    "description": "Hyppyn värin valinnan nimilappu modaalissa"
+  },
+  "add_hop_button": {
+    "message": "Lisää hyppy",
+    "description": "Nappiteksti uuden hypyn lisäämiseen modaalissa"
+  },
+  "cancel_button": {
+    "message": "Peruuta",
+    "description": "Nappiteksti hypyn lisäämisen peruuttamiseen modaalissa"
+  }
+}

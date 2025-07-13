@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — 长页面的快速跳转",
+    "description": "kanGO扩展的名称"
+  },
+  "extension_description": {
+    "message": "使用kanGO轻松浏览您的内容！",
+    "description": "kanGO扩展的描述"
+  },
+  "add_hop": {
+    "message": "添加跳转...",
+    "description": "用于添加新跳转的菜单项"
+  },
+  "wrong_page": {
+    "message": "您无法在此页面添加跳转",
+    "description": "尝试在不支持的页面添加跳转时显示的消息"
+  },
+  "no_hops": {
+    "message": "此页面没有跳转。右键点击元素添加第一个跳转。",
+    "description": "当前页面没有跳转时显示的消息"
+  },
+  "hop_title": {
+    "message": "标题:",
+    "description": "modal中跳转标题输入字段的标签"
+  },
+  "hop_color": {
+    "message": "颜色:",
+    "description": "modal中跳转颜色选择的标签"
+  },
+  "add_hop_button": {
+    "message": "添加跳转",
+    "description": "modal中新建跳转按钮的文本"
+  },
+  "cancel_button": {
+    "message": "取消",
+    "description": "modal中取消添加跳转按钮的文本"
+  }
+}

@@ -1,0 +1,122 @@
+.hop-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.hop-modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hop-modal .content {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.hop-modal h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.hop-modal .text-preview {
+  background: #f3f4f6;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.hop-modal .form-group {
+  margin-bottom: 16px;
+}
+
+.hop-modal .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.hop-modal .form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.hop-modal .color-picker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hop-modal .color-option {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.hop-modal .color-option.selected {
+  border-color: #374151;
+}
+
+.hop-modal .modal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.hop-modal .modal-buttons button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hop-modal .btn-cancel {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.hop-modal .btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+.hop-modal .btn-add {
+  background: #3b82f6;
+  color: white;
+}
+
+.hop-modal .btn-add:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.hop-modal .btn-add:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}

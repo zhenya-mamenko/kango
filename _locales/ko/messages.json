@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — 긴 페이지를 위한 빠른 점프",
+    "description": "kanGO 확장 프로그램 이름"
+  },
+  "extension_description": {
+    "message": "kanGO로 콘텐츠를 편리하게 탐색하세요!",
+    "description": "kanGO 확장 프로그램 설명"
+  },
+  "add_hop": {
+    "message": "점프 추가...",
+    "description": "새 점프를 추가하는 메뉴 항목"
+  },
+  "wrong_page": {
+    "message": "이 페이지에서는 점프를 추가할 수 없습니다",
+    "description": "지원되지 않는 페이지에 점프를 추가하려고 할 때 표시되는 메시지"
+  },
+  "no_hops": {
+    "message": "이 페이지에는 점프가 없습니다. 요소를 마우스 오른쪽 버튼으로 클릭하여 첫 번째 점프를 추가하세요.",
+    "description": "현재 페이지에 점프가 없을 때 표시되는 메시지"
+  },
+  "hop_title": {
+    "message": "제목:",
+    "description": "모달에서 점프 제목 입력 필드의 라벨"
+  },
+  "hop_color": {
+    "message": "색상:",
+    "description": "모달에서 점프 색상 선택 라벨"
+  },
+  "add_hop_button": {
+    "message": "점프 추가",
+    "description": "모달에서 새 점프를 추가하는 버튼 텍스트"
+  },
+  "cancel_button": {
+    "message": "취소",
+    "description": "모달에서 점프 추가를 취소하는 버튼 텍스트"
+  }
+}

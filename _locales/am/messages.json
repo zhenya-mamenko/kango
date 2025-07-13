@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — ለረጅም ገፆች ፈጣን መዘዋወሪያዎች",
+    "description": "የkanGO አካል ስም"
+  },
+  "extension_description": {
+    "message": "በkanGO ይዘትዎን በቀላሉ ያስተዋውቁ!",
+    "description": "kanGO አካል መግለጫ"
+  },
+  "add_hop": {
+    "message": "መዘዋወሪያ ያክሉ...",
+    "description": "አዲስ መዘዋወሪያ ለመጨመር ምናሌ አካል"
+  },
+  "wrong_page": {
+    "message": "በዚህ ገፅ መዘዋወሪያዎችን ማከል አይችሉም",
+    "description": "በደግሞ ገፅ መዘዋወሪያ ለመጨመር ሲሞከሩ የሚታየው መልእክት"
+  },
+  "no_hops": {
+    "message": "በዚህ ገፅ መዘዋወሪያዎች የሉም። የመጀመሪያውን በቀኝ አዝራሩ ላይ በመጫን ያክሉ።",
+    "description": "በአሁኑ ገፅ መዘዋወሪያዎች ሲጎድሉ የሚታየው መልእክት"
+  },
+  "hop_title": {
+    "message": "ርዕስ:",
+    "description": "በሞዳል ውስጥ የመዘዋወሪያ ርዕስ መስክ ምልክት"
+  },
+  "hop_color": {
+    "message": "ቀለም:",
+    "description": "በሞዳል ውስጥ የመዘዋወሪያ ቀለም ምልክት"
+  },
+  "add_hop_button": {
+    "message": "መዘዋወሪያ ያክሉ",
+    "description": "በሞዳል ውስጥ አዲስ መዘዋወሪያ ለመጨመር የሚጠቀምበት አዝራር ጽሑፍ"
+  },
+  "cancel_button": {
+    "message": "ሰርዝ",
+    "description": "በሞዳል ውስጥ መዘዋወሪያ ማከል ለመቆም የሚጠቀምበት አዝራር ጽሑፍ"
+  }
+}
