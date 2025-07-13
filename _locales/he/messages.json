@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — קפיצות מהירות לדפים ארוכים",
+    "description": "שם התוסף kanGO"
+  },
+  "extension_description": {
+    "message": "נווט בתוכן שלך בנוחות עם kanGO!",
+    "description": "תיאור התוסף kanGO"
+  },
+  "add_hop": {
+    "message": "הוסף קפיצה...",
+    "description": "פריט תפריט להוספת קפיצה חדשה"
+  },
+  "wrong_page": {
+    "message": "לא ניתן להוסיף קפיצות בדף זה",
+    "description": "הודעה כאשר מנסים להוסיף קפיצה בדף לא נתמך"
+  },
+  "no_hops": {
+    "message": "אין קפיצות בדף זה. הוסף את הראשונה בלחיצה ימנית על האלמנט.",
+    "description": "הודעה כאשר אין קפיצות בדף הנוכחי"
+  },
+  "hop_title": {
+    "message": "כותרת:",
+    "description": "תווית לשדה כותרת הקפיצה במודאל"
+  },
+  "hop_color": {
+    "message": "צבע:",
+    "description": "תווית לבחירת צבע הקפיצה במודאל"
+  },
+  "add_hop_button": {
+    "message": "הוסף קפיצה",
+    "description": "טקסט כפתור להוספת קפיצה חדשה במודאל"
+  },
+  "cancel_button": {
+    "message": "ביטול",
+    "description": "טקסט כפתור לביטול הוספת קפיצה במודאל"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Szybkie skoki dla długich stron",
+    "description": "Nazwa rozszerzenia kanGO"
+  },
+  "extension_description": {
+    "message": "Wygodnie nawiguj po swojej treści z kanGO!",
+    "description": "Opis rozszerzenia kanGO"
+  },
+  "add_hop": {
+    "message": "Dodaj skok...",
+    "description": "Element menu do dodania nowego skoku"
+  },
+  "wrong_page": {
+    "message": "Nie możesz dodawać skoków na tej stronie",
+    "description": "Komunikat przy próbie dodania skoku na nieobsługiwanej stronie"
+  },
+  "no_hops": {
+    "message": "Brak skoków na tej stronie. Dodaj pierwszy klikając prawym przyciskiem na elemencie.",
+    "description": "Komunikat, gdy na bieżącej stronie nie ma skoków"
+  },
+  "hop_title": {
+    "message": "Tytuł:",
+    "description": "Etykieta dla pola tytułu skoku w oknie modalnym"
+  },
+  "hop_color": {
+    "message": "Kolor:",
+    "description": "Etykieta dla wyboru koloru skoku w oknie modalnym"
+  },
+  "add_hop_button": {
+    "message": "Dodaj skok",
+    "description": "Tekst przycisku do dodania nowego skoku w oknie modalnym"
+  },
+  "cancel_button": {
+    "message": "Anuluj",
+    "description": "Tekst przycisku do anulowania dodania skoku w oknie modalnym"
+  }
+}

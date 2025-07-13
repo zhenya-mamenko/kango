@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — 長頁面的快速跳躍",
+    "description": "kanGO 擴充功能名稱"
+  },
+  "extension_description": {
+    "message": "使用 kanGO 方便地瀏覽您的內容！",
+    "description": "kanGO 擴充功能描述"
+  },
+  "add_hop": {
+    "message": "新增跳躍...",
+    "description": "新增跳躍的選單項目"
+  },
+  "wrong_page": {
+    "message": "您無法在此頁面新增跳躍",
+    "description": "嘗試在不支援的頁面新增跳躍時顯示的訊息"
+  },
+  "no_hops": {
+    "message": "此頁面沒有跳躍。請在元素上按右鍵新增第一個跳躍。",
+    "description": "目前頁面沒有跳躍時顯示的訊息"
+  },
+  "hop_title": {
+    "message": "標題:",
+    "description": "modal 中跳躍標題輸入欄位的標籤"
+  },
+  "hop_color": {
+    "message": "顏色:",
+    "description": "modal 中跳躍顏色選擇的標籤"
+  },
+  "add_hop_button": {
+    "message": "新增跳躍",
+    "description": "modal 中新增跳躍按鈕的文字"
+  },
+  "cancel_button": {
+    "message": "取消",
+    "description": "modal 中取消新增跳躍按鈕的文字"
+  }
+}

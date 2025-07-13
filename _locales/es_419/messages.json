@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Saltos rápidos para páginas largas",
+    "description": "Nombre de la extensión kanGO"
+  },
+  "extension_description": {
+    "message": "¡Navega cómodamente por tu contenido con kanGO!",
+    "description": "Descripción de la extensión kanGO"
+  },
+  "add_hop": {
+    "message": "Agregar salto...",
+    "description": "Elemento de menú para agregar un nuevo salto"
+  },
+  "wrong_page": {
+    "message": "No puedes agregar saltos en esta página",
+    "description": "Mensaje mostrado al intentar agregar un salto en una página no compatible"
+  },
+  "no_hops": {
+    "message": "No hay saltos en esta página. Agrega el primero haciendo clic derecho en el elemento.",
+    "description": "Mensaje mostrado cuando no hay saltos disponibles en la página actual"
+  },
+  "hop_title": {
+    "message": "Título:",
+    "description": "Etiqueta para el campo de título del salto en el modal"
+  },
+  "hop_color": {
+    "message": "Color:",
+    "description": "Etiqueta para la selección de color del salto en el modal"
+  },
+  "add_hop_button": {
+    "message": "Agregar salto",
+    "description": "Texto del botón para agregar un nuevo salto en el modal"
+  },
+  "cancel_button": {
+    "message": "Cancelar",
+    "description": "Texto del botón para cancelar la adición de un salto en el modal"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Mijia ya haraka kwa kurasa ndefu",
+    "description": "Jina la kiendelezi cha kanGO"
+  },
+  "extension_description": {
+    "message": "Tembea kwa urahisi kwenye maudhui yako kwa kanGO!",
+    "description": "Maelezo ya kiendelezi cha kanGO"
+  },
+  "add_hop": {
+    "message": "Ongeza mji...",
+    "description": "Kipengee cha menyu kuongeza mji mpya"
+  },
+  "wrong_page": {
+    "message": "Huwezi kuongeza mijia kwenye ukurasa huu",
+    "description": "Ujumbe unapojaribu kuongeza mji kwenye ukurasa usioungwa mkono"
+  },
+  "no_hops": {
+    "message": "Hakuna mijia kwenye ukurasa huu. Ongeza ya kwanza kwa kubofya kulia kwenye kipengee.",
+    "description": "Ujumbe wakati hakuna mijia kwenye ukurasa wa sasa"
+  },
+  "hop_title": {
+    "message": "Kichwa:",
+    "description": "Lebo ya uwanja wa kichwa cha mji kwenye modal"
+  },
+  "hop_color": {
+    "message": "Rangi:",
+    "description": "Lebo ya kuchagua rangi ya mji kwenye modal"
+  },
+  "add_hop_button": {
+    "message": "Ongeza mji",
+    "description": "Maandishi ya kitufe cha kuongeza mji mpya kwenye modal"
+  },
+  "cancel_button": {
+    "message": "Ghairi",
+    "description": "Maandishi ya kitufe cha kughairi kuongeza mji kwenye modal"
+  }
+}

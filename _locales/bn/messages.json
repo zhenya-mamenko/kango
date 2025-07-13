@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — দীর্ঘ পাতার জন্য দ্রুত হপ",
+    "description": "kanGO এক্সটেনশনের নাম"
+  },
+  "extension_description": {
+    "message": "kanGO দিয়ে সহজেই আপনার কনটেন্টে নেভিগেট করুন!",
+    "description": "kanGO এক্সটেনশনের বিবরণ"
+  },
+  "add_hop": {
+    "message": "হপ যোগ করুন...",
+    "description": "নতুন হপ যোগ করার মেনু আইটেম"
+  },
+  "wrong_page": {
+    "message": "এই পাতায় হপ যোগ করা যাবে না",
+    "description": "অসমর্থিত পাতায় হপ যোগ করার চেষ্টা করলে দেখানো বার্তা"
+  },
+  "no_hops": {
+    "message": "এই পাতায় কোনো হপ নেই। ডান ক্লিক করে প্রথমটি যোগ করুন।",
+    "description": "বর্তমান পাতায় কোনো হপ না থাকলে দেখানো বার্তা"
+  },
+  "hop_title": {
+    "message": "শিরোনাম:",
+    "description": "মোডাল-এ হপ শিরোনাম ইনপুট ফিল্ডের লেবেল"
+  },
+  "hop_color": {
+    "message": "রং:",
+    "description": "মোডাল-এ হপ রং নির্বাচন লেবেল"
+  },
+  "add_hop_button": {
+    "message": "হপ যোগ করুন",
+    "description": "মোডাল-এ নতুন হপ যোগ করার বোতামের টেক্সট"
+  },
+  "cancel_button": {
+    "message": "বাতিল",
+    "description": "মোডাল-এ হপ যোগ বাতিল করার বোতামের টেক্সট"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Greiti šuoliai ilgoms puslapiams",
+    "description": "kanGO plėtinio pavadinimas"
+  },
+  "extension_description": {
+    "message": "Patogiai naršykite savo turinį su kanGO!",
+    "description": "kanGO plėtinio aprašymas"
+  },
+  "add_hop": {
+    "message": "Pridėti šuolį...",
+    "description": "Meniu punktas naujam šuoliui pridėti"
+  },
+  "wrong_page": {
+    "message": "Šioje puslapyje negalite pridėti šuolių",
+    "description": "Pranešimas bandant pridėti šuolį nepalaikomame puslapyje"
+  },
+  "no_hops": {
+    "message": "Šiame puslapyje nėra šuolių. Pridėkite pirmąjį, paspaudę dešinį pelės mygtuką ant elemento.",
+    "description": "Pranešimas, kai dabartiniame puslapyje nėra šuolių"
+  },
+  "hop_title": {
+    "message": "Pavadinimas:",
+    "description": "Žymė šuolio pavadinimo laukui modalyje"
+  },
+  "hop_color": {
+    "message": "Spalva:",
+    "description": "Žymė šuolio spalvos pasirinkimui modalyje"
+  },
+  "add_hop_button": {
+    "message": "Pridėti šuolį",
+    "description": "Mygtuko tekstas naujam šuoliui pridėti modalyje"
+  },
+  "cancel_button": {
+    "message": "Atšaukti",
+    "description": "Mygtuko tekstas šuolio pridėjimo atšaukimui modalyje"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Rychlé skoky pro dlouhé stránky",
+    "description": "Název rozšíření kanGO"
+  },
+  "extension_description": {
+    "message": "Pohodlně procházejte svůj obsah s kanGO!",
+    "description": "Popis rozšíření kanGO"
+  },
+  "add_hop": {
+    "message": "Přidat skok...",
+    "description": "Položka menu pro přidání nového skoku"
+  },
+  "wrong_page": {
+    "message": "Na této stránce nelze přidávat skoky",
+    "description": "Zpráva při pokusu o přidání skoku na nepodporované stránce"
+  },
+  "no_hops": {
+    "message": "Na této stránce nejsou žádné skoky. Přidejte první kliknutím pravým tlačítkem na prvek.",
+    "description": "Zpráva, když na aktuální stránce nejsou žádné skoky"
+  },
+  "hop_title": {
+    "message": "Název:",
+    "description": "Popisek pro pole názvu skoku v modálním okně"
+  },
+  "hop_color": {
+    "message": "Barva:",
+    "description": "Popisek pro výběr barvy skoku v modálním okně"
+  },
+  "add_hop_button": {
+    "message": "Přidat skok",
+    "description": "Text tlačítka pro přidání nového skoku v modálním okně"
+  },
+  "cancel_button": {
+    "message": "Zrušit",
+    "description": "Text tlačítka pro zrušení přidání skoku v modálním okně"
+  }
+}

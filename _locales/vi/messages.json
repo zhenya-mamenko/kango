@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Nhảy nhanh cho các trang dài",
+    "description": "Tên tiện ích mở rộng kanGO"
+  },
+  "extension_description": {
+    "message": "Dễ dàng điều hướng nội dung của bạn với kanGO!",
+    "description": "Mô tả tiện ích mở rộng kanGO"
+  },
+  "add_hop": {
+    "message": "Thêm nhảy...",
+    "description": "Mục menu để thêm nhảy mới"
+  },
+  "wrong_page": {
+    "message": "Bạn không thể thêm nhảy trên trang này",
+    "description": "Thông báo khi cố gắng thêm nhảy trên trang không được hỗ trợ"
+  },
+  "no_hops": {
+    "message": "Không có nhảy trên trang này. Thêm nhảy đầu tiên bằng cách nhấp chuột phải vào phần tử.",
+    "description": "Thông báo khi không có nhảy trên trang hiện tại"
+  },
+  "hop_title": {
+    "message": "Tiêu đề:",
+    "description": "Nhãn cho trường nhập tiêu đề nhảy trong modal"
+  },
+  "hop_color": {
+    "message": "Màu sắc:",
+    "description": "Nhãn cho lựa chọn màu nhảy trong modal"
+  },
+  "add_hop_button": {
+    "message": "Thêm nhảy",
+    "description": "Văn bản nút để thêm nhảy mới trong modal"
+  },
+  "cancel_button": {
+    "message": "Hủy",
+    "description": "Văn bản nút để hủy thêm nhảy trong modal"
+  }
+}

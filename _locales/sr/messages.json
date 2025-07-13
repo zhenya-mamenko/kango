@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Brzi skokovi za duge stranice",
+    "description": "Naziv ekstenzije kanGO"
+  },
+  "extension_description": {
+    "message": "Jednostavno navigirajte kroz svoj sadržaj uz kanGO!",
+    "description": "Opis ekstenzije kanGO"
+  },
+  "add_hop": {
+    "message": "Dodaj skok...",
+    "description": "Stavka menija za dodavanje novog skoka"
+  },
+  "wrong_page": {
+    "message": "Ne možete dodavati skokove na ovoj stranici",
+    "description": "Poruka pri pokušaju dodavanja skoka na nepodržanoj stranici"
+  },
+  "no_hops": {
+    "message": "Nema skokova na ovoj stranici. Dodajte prvi desnim klikom na element.",
+    "description": "Poruka kada nema skokova na trenutnoj stranici"
+  },
+  "hop_title": {
+    "message": "Naslov:",
+    "description": "Oznaka za polje naslova skoka u modalu"
+  },
+  "hop_color": {
+    "message": "Boja:",
+    "description": "Oznaka za izbor boje skoka u modalu"
+  },
+  "add_hop_button": {
+    "message": "Dodaj skok",
+    "description": "Tekst dugmeta za dodavanje novog skoka u modalu"
+  },
+  "cancel_button": {
+    "message": "Otkaži",
+    "description": "Tekst dugmeta za otkazivanje dodavanja skoka u modalu"
+  }
+}

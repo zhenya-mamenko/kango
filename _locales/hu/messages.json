@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Gyors ugrások hosszú oldalakhoz",
+    "description": "A kanGO kiterjesztés neve"
+  },
+  "extension_description": {
+    "message": "Kényelmesen navigáljon tartalmában a kanGO-val!",
+    "description": "A kanGO kiterjesztés leírása"
+  },
+  "add_hop": {
+    "message": "Ugrás hozzáadása...",
+    "description": "Menüpont új ugrás hozzáadásához"
+  },
+  "wrong_page": {
+    "message": "Ezen az oldalon nem adhat hozzá ugrásokat",
+    "description": "Üzenet, amikor a felhasználó nem támogatott oldalon próbál ugrást hozzáadni"
+  },
+  "no_hops": {
+    "message": "Nincsenek ugrások ezen az oldalon. Adja hozzá az elsőt jobb kattintással az elemre.",
+    "description": "Üzenet, amikor nincsenek ugrások az aktuális oldalon"
+  },
+  "hop_title": {
+    "message": "Cím:",
+    "description": "Címke az ugrás címének mezőjéhez a modálban"
+  },
+  "hop_color": {
+    "message": "Szín:",
+    "description": "Címke az ugrás színének kiválasztásához a modálban"
+  },
+  "add_hop_button": {
+    "message": "Ugrás hozzáadása",
+    "description": "Gombszöveg új ugrás hozzáadásához a modálban"
+  },
+  "cancel_button": {
+    "message": "Mégse",
+    "description": "Gombszöveg az ugrás hozzáadásának megszakításához a modálban"
+  }
+}

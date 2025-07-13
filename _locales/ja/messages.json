@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — 長いページのための高速ジャンプ",
+    "description": "kanGO拡張機能の名前"
+  },
+  "extension_description": {
+    "message": "kanGOでコンテンツを便利にナビゲート！",
+    "description": "kanGO拡張機能の説明"
+  },
+  "add_hop": {
+    "message": "ジャンプを追加...",
+    "description": "新しいジャンプを追加するメニュー項目"
+  },
+  "wrong_page": {
+    "message": "このページではジャンプを追加できません",
+    "description": "サポートされていないページでジャンプを追加しようとしたときのメッセージ"
+  },
+  "no_hops": {
+    "message": "このページにはジャンプがありません。最初のジャンプは要素を右クリックして追加してください。",
+    "description": "現在のページにジャンプがない場合のメッセージ"
+  },
+  "hop_title": {
+    "message": "タイトル:",
+    "description": "モーダルのジャンプタイトル入力フィールドのラベル"
+  },
+  "hop_color": {
+    "message": "色:",
+    "description": "モーダルのジャンプ色選択のラベル"
+  },
+  "add_hop_button": {
+    "message": "ジャンプを追加",
+    "description": "モーダルで新しいジャンプを追加するボタンのテキスト"
+  },
+  "cancel_button": {
+    "message": "キャンセル",
+    "description": "モーダルでジャンプ追加をキャンセルするボタンのテキスト"
+  }
+}

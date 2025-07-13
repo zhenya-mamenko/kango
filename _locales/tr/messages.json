@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Uzun sayfalar için hızlı atlamalar",
+    "description": "kanGO uzantısının adı"
+  },
+  "extension_description": {
+    "message": "kanGO ile içeriğinizde kolayca gezinin!",
+    "description": "kanGO uzantısının açıklaması"
+  },
+  "add_hop": {
+    "message": "Atlama ekle...",
+    "description": "Yeni atlama eklemek için menü öğesi"
+  },
+  "wrong_page": {
+    "message": "Bu sayfada atlama ekleyemezsiniz",
+    "description": "Desteklenmeyen sayfada atlama eklemeye çalışırken gösterilen mesaj"
+  },
+  "no_hops": {
+    "message": "Bu sayfada hiç atlama yok. İlkini eklemek için öğeye sağ tıklayın.",
+    "description": "Mevcut sayfada hiç atlama yoksa gösterilen mesaj"
+  },
+  "hop_title": {
+    "message": "Başlık:",
+    "description": "Modalda atlama başlığı giriş alanı etiketi"
+  },
+  "hop_color": {
+    "message": "Renk:",
+    "description": "Modalda atlama renk seçimi etiketi"
+  },
+  "add_hop_button": {
+    "message": "Atlama ekle",
+    "description": "Modalda yeni atlama ekleme buton metni"
+  },
+  "cancel_button": {
+    "message": "İptal",
+    "description": "Modalda atlama eklemeyi iptal etme buton metni"
+  }
+}

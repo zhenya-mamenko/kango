@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Ātri lēcieni garām lapām",
+    "description": "kanGO paplašinājuma nosaukums"
+  },
+  "extension_description": {
+    "message": "Ērti pārvietojieties pa saturu ar kanGO!",
+    "description": "kanGO paplašinājuma apraksts"
+  },
+  "add_hop": {
+    "message": "Pievienot lēcienu...",
+    "description": "Izvēlnes vienums jauna lēciena pievienošanai"
+  },
+  "wrong_page": {
+    "message": "Šajā lapā nevar pievienot lēcienus",
+    "description": "Ziņojums, mēģinot pievienot lēcienu neatbalstītā lapā"
+  },
+  "no_hops": {
+    "message": "Šajā lapā nav lēcienu. Pievienojiet pirmo, noklikšķinot ar peles labo pogu uz elementa.",
+    "description": "Ziņojums, kad pašreizējā lapā nav lēcienu"
+  },
+  "hop_title": {
+    "message": "Virsraksts:",
+    "description": "Lēciena virsraksta ievades lauka etiķete modālajā logā"
+  },
+  "hop_color": {
+    "message": "Krāsa:",
+    "description": "Lēciena krāsas izvēles etiķete modālajā logā"
+  },
+  "add_hop_button": {
+    "message": "Pievienot lēcienu",
+    "description": "Pogas teksts jauna lēciena pievienošanai modālajā logā"
+  },
+  "cancel_button": {
+    "message": "Atcelt",
+    "description": "Pogas teksts lēciena pievienošanas atcelšanai modālajā logā"
+  }
+}

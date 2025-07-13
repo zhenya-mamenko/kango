@@ -1,0 +1,38 @@
+{
+  "extension_name": {
+    "message": "kanGO — Hurtige spring for lange sider",
+    "description": "Navnet på kanGO-udvidelsen"
+  },
+  "extension_description": {
+    "message": "Naviger nemt gennem dit indhold med kanGO!",
+    "description": "Beskrivelse af kanGO-udvidelsen"
+  },
+  "add_hop": {
+    "message": "Tilføj spring...",
+    "description": "Menupunkt for at tilføje et nyt spring"
+  },
+  "wrong_page": {
+    "message": "Du kan ikke tilføje spring på denne side",
+    "description": "Besked når brugeren forsøger at tilføje spring på en ikke-understøttet side"
+  },
+  "no_hops": {
+    "message": "Ingen spring på denne side. Tilføj det første ved at højreklikke på elementet.",
+    "description": "Besked når der ikke er nogen spring på den aktuelle side"
+  },
+  "hop_title": {
+    "message": "Titel:",
+    "description": "Label for springtitel i modal"
+  },
+  "hop_color": {
+    "message": "Farve:",
+    "description": "Label for valg af springfarve i modal"
+  },
+  "add_hop_button": {
+    "message": "Tilføj spring",
+    "description": "Knaptekst for at tilføje et nyt spring i modal"
+  },
+  "cancel_button": {
+    "message": "Annuller",
+    "description": "Knaptekst for at annullere tilføjelse af spring i modal"
+  }
+}
