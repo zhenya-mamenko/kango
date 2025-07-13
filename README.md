@@ -1,3 +1,5 @@
+<div align="center"><img width="180" src="https://github.com/user-attachments/assets/91199e24-85ac-4335-b1a7-9f0b4c2dfb11" /></div>
+
 # kanGO — Fast hops for long pages
 
 ## Overview
