@@ -99,8 +99,8 @@ class HopsManager {
       value,
       color: chrome.i18n.getMessage('hop_color'),
       colors: HOP_COLORS.map(color => `<div class="color-option" data-color="${color}" style="background-color: ${color};"></div>`).join(''),
-      cancel: chrome.i18n.getMessage('cancel'),
-      add: chrome.i18n.getMessage('add'),
+      cancel: chrome.i18n.getMessage('cancel_button'),
+      add: chrome.i18n.getMessage('add_hop_button'),
     }
 
     modal.innerHTML = modalHtml.formatUnicorn(values);

@@ -16,7 +16,7 @@
     "description": "Message shown when the user tries to add a hop on an unsupported page"
   },
   "no_hops": {
-    "message": "No hops on this page. Add the first one by right-clicking on the element.",
+    "message": "No hops on this page. Add the first one by right-clicking on the page.",
     "description": "Message shown when there are no hops available on the current page"
   },
   "hop_title": {

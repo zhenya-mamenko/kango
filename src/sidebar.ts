@@ -44,7 +44,6 @@ class SidebarManager {
 
   private async loadHops() {
     try {
-      document.querySelector('.header h2')!.textContent = 'Метки';
       this.hops = await HopsStorage.getHops(this.currentUrl);
       this.renderHops(checkUrl(this.currentUrl));
     } catch (error) {
