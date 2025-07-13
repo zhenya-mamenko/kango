@@ -12,6 +12,11 @@ kanGO is a Chrome extension designed to help you quickly navigate long web pages
 - Customizable hop titles and colors
 - Localized interface (multiple languages supported)
 
+## Screenshots
+
+<img width="800" src="https://github.com/user-attachments/assets/6efa2326-e0c7-4fc1-9495-40372c8e1213" />
+
+
 ## Installation
 1. Download or clone this repository.
 2. Open Chrome and go to `chrome://extensions`.
