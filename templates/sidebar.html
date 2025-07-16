@@ -48,15 +48,12 @@
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
-    .item.dragging {
-      opacity: 0.5;
-    }
-
     .content {
       display: flex;
       align-items: center;
       gap: 12px;
       position: relative;
+      padding-left: 4px;
     }
 
     .color {
@@ -126,11 +123,10 @@
       left: 4px;
       top: 50%;
       transform: translateY(-50%);
-      width: 4px;
-      height: 20px;
+      width: 6px;
+      height: 60%;
       background: #d1d5db;
-      border-radius: 2px;
-      cursor: grab;
+      border-radius: 3px;
       opacity: 0;
       transition: opacity 0.2s;
     }
@@ -139,8 +135,21 @@
       opacity: 1;
     }
 
+    .drag-handle:hover {
+      cursor: grab;
+    }
+
     .drag-handle:active {
       cursor: grabbing;
+    }
+
+    .item.dragging {
+      opacity: 0.5;
+      cursor: grabbing !important;
+    }
+
+    body.dragging-active .drag-handle {
+      cursor: grabbing !important;
     }
   </style>
 </head>

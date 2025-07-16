@@ -2,6 +2,7 @@ export const ACTIONS = {
   ADD: 'addHop',
   HIDE_MENU: 'hideContextMenu',
   OPEN_SIDEBAR: 'openSidebar',
+  PING: 'ping',
   REMOVE: 'removeHop',
   SCROLL: 'scrollToHop',
   SHOW_MODAL: 'showHopModal',
@@ -39,7 +40,7 @@ export class HopsStorage {
       const result = await chrome.storage.local.get(this.STORAGE_KEY);
       hops = result[this.STORAGE_KEY] || [];
     } catch (error) {
-      console.error('Error getting hops from storage: ', error);
+      log('error', 'Error getting hops from storage: ', error);
     }
 
     if (url) {
@@ -70,19 +71,19 @@ export class HopsStorage {
   }
 }
 
-export function checkUrl(url: string): boolean {
+export const forbiddenProtocols = [
+  'chrome:', 'chrome-extension:', 'moz-extension:', 'edge:', 'about:', 'data:',
+  'file:', 'blob:', 'devtools:', 'opera:', 'opera-extension:', 'webview:',
+  'vscode:', 'vscode-web:', 'vscode-resource:'
+];
+
+export function checkUrl(url?: string): boolean {
   let result = false;
   try {
-    const urlObj = new URL(url);
+    const urlObj = new URL(url ?? '');
 
-    result = ['', '/',].includes(urlObj.pathname);
-
-    result = result ||
-      [
-        'chrome:', 'chrome-extension:', 'moz-extension:', 'edge:', 'about:', 'data:',
-        'file:', 'blob:', 'devtools:', 'opera:', 'opera-extension:', 'webview:',
-        'vscode:', 'vscode-web:', 'vscode-resource:'
-      ].includes(urlObj.protocol);
+    result = ['', '/'].includes(urlObj.pathname);
+    result = result || forbiddenProtocols.includes(urlObj.protocol);
 
   } catch (error) {
     result = true;
@@ -141,3 +142,28 @@ String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
     }
     return str;
   };
+
+export function log(type: 'log' | 'error' | 'warn', ...args: any[]) {
+  // @ts-ignore
+  if (import.meta.env.MODE === 'development') {
+    console[type](...args);
+  }
+}
+
+export async function safeSendMessage(message: any): Promise<any> {
+  try {
+    if (!chrome.runtime || !chrome.runtime.id) {
+      log('warn', 'kanGO: Extension context is not available, cannot send message');
+      return null;
+    }
+
+    return await chrome.runtime.sendMessage(message);
+  } catch (error) {
+    if (error instanceof Error && error.message.includes('Extension context invalidated')) {
+      log('warn', 'kanGO: Extension context invalidated, message not sent');
+    } else {
+      log('error', 'kanGO: Failed to send message: ', error);
+    }
+    return null;
+  }
+}
