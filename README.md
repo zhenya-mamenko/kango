@@ -16,8 +16,9 @@ kanGO is a Chrome extension designed to help you quickly navigate long web pages
 
 <img width="800" src="https://github.com/user-attachments/assets/6efa2326-e0c7-4fc1-9495-40372c8e1213" />
 
-
 ## Installation
+Install from [Chrome web store](https://chromewebstore.google.com/detail/kango-%E2%80%94-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%D1%8B/gpmhhokjggcedbohdhppbojjgodpjpmf) or
+
 1. Download or clone this repository.
 2. Open Chrome and go to `chrome://extensions`.
 3. Enable "Developer mode" (top right corner).

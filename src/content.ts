@@ -1,4 +1,4 @@
-import { ACTIONS, HOP_COLORS, HopsStorage, Hop, escapeHtml, generateSelector } from './common';
+import { ACTIONS, HOP_COLORS, HopsStorage, Hop, escapeHtml, generateSelector, log, safeSendMessage } from './common';
 //@ts-ignore
 import modalHtml from '../templates/modal.html?raw';
 //@ts-ignore
@@ -7,54 +7,63 @@ import modalCss from '../templates/modal.css?raw';
 class HopsManager {
   private modal: HTMLElement | null = null;
   private clickedElement: HTMLElement | null = null;
+  private currentUrl: string = window.location.href;
+  private isInitialized: boolean = false;
 
   constructor() {
     chrome.runtime.onMessage.addListener((message) => {
       switch (message.action) {
+        case ACTIONS.PING:
+          return Promise.resolve('PONG');
+        case ACTIONS.TAB_CHANGED:
+          this.loadExistingHops();
+          break;
+        case ACTIONS.REMOVE:
+          this.removeHop(message.hopId);
+          break;
         case ACTIONS.SHOW_MODAL:
           this.showHopModal(message.selectedText ?? '');
           break;
         case ACTIONS.SCROLL:
           this.scrollToHop(message.hopId);
           break;
-        case ACTIONS.REMOVE:
-          this.removeHop(message.hopId);
-          break;
       }
     });
 
-    document.addEventListener('click', (event) => {
+    document.addEventListener('click', async (event) => {
       const target = event.target as HTMLElement;
       const hop = target.closest('.kango-hop');
       if (hop && hop.hasAttribute('data-hop-id')) {
         event.preventDefault();
-        chrome.runtime.sendMessage({ action: ACTIONS.OPEN_SIDEBAR });
+        await safeSendMessage({ action: ACTIONS.OPEN_SIDEBAR });
       }
     });
 
-    document.addEventListener('contextmenu', (event) => {
+    document.addEventListener('contextmenu', async (event) => {
       this.clickedElement = event.target as HTMLElement;
       if (!generateSelector(this.clickedElement)) {
-        chrome.runtime.sendMessage({
+        await safeSendMessage({
           action: ACTIONS.HIDE_MENU,
         });
         this.clickedElement = null;
       }
     });
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => this.loadExistingHops(), 1000);
-      });
-    } else {
-      this.loadExistingHops();
-    }
+    this.initialize();
+  }
 
+  private async initialize() {
+    this.isInitialized = true;
+    this.currentUrl = window.location.href;
+    await this.loadExistingHops();
     this.setupDOMObserver();
+    this.setupHistoryListener();
+    this.setupVisibilityListener();
   }
 
   private async loadExistingHops() {
     const currentUrl = window.location.href;
+
     const hops = await HopsStorage.getHops(currentUrl);
 
     hops.forEach((hop: Hop) => {
@@ -79,6 +88,8 @@ class HopsManager {
 
     const titleInput = this.modal.querySelector('#hop-modal-title') as HTMLInputElement;
     titleInput?.focus();
+    const addButton = this.modal.querySelector('#kango-add-hop') as HTMLButtonElement;
+    addButton.disabled = !value?.trim();
   }
 
   private getElementText(element: HTMLElement): string {
@@ -115,54 +126,72 @@ class HopsManager {
     const titleInput = modal.querySelector('#kango-hop-title') as HTMLInputElement;
     const addButton = modal.querySelector('#kango-add-hop') as HTMLButtonElement;
     const cancelButton = modal.querySelector('#kango-cancel-hop') as HTMLButtonElement;
+    const overlay = modal.querySelector('.hop-modal .overlay') as HTMLButtonElement;
     const colorOptions = modal.querySelectorAll('.hop-modal .color-option');
 
     colorOptions[0]?.classList.add('selected');
     let selectedColor = colorOptions[0]?.getAttribute('data-color')!;
 
-    titleInput?.addEventListener('input', () => {
+    const listeners: Array<{ element: Document | Element, handler: (e: any) => void, event: string}> = [];
+    const addListener = (element: Document | Element, event: string, handler: (e: any) => void) => {
+      if (!element || !element.addEventListener) return;
+      element.addEventListener(event, handler);
+      listeners.push({ element, handler, event });
+    };
+
+    addListener(titleInput, 'input', () => {
       addButton.disabled = !titleInput.value.trim();
     });
 
     colorOptions.forEach(option => {
-      option.addEventListener('click', () => {
+      const handler = () => {
         colorOptions.forEach(opt => opt.classList.remove('selected'));
         option.classList.add('selected');
         selectedColor = option.getAttribute('data-color')!;
-      });
+      };
+      addListener(option, 'click', handler);
     });
 
-    cancelButton?.addEventListener('click', () => {
+    addListener(cancelButton, 'click', () => {
       this.closeModal();
     });
-    addButton?.addEventListener('click', async () => {
+
+    addListener(addButton, 'click', async () => {
       await this.addHop(titleInput.value.trim(), selectedColor);
       this.closeModal();
     });
 
-    document.addEventListener('keydown', (e) => {
+    addListener(document, 'keydown', (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         this.closeModal();
       }
     });
 
-    modal.querySelector('.hop-modal .overlay')?.addEventListener('click', (e) => {
+    addListener(overlay, 'click', (e: Event) => {
       if (e.target === e.currentTarget) {
         this.closeModal();
       }
     });
+
+    (modal as any)._listeners = listeners;
   }
 
   private async addHop(title: string, color: string) {
     if (!this.clickedElement || !title) return;
 
+    const id = HopsStorage.generateId();
+    const selector = generateSelector(this.clickedElement);
+    if (!selector) return;
+    const url = window.location.href;
+    const order = await HopsStorage.getHops(url).then(hops => hops.length);
+
     const hop: Hop = {
-      id: HopsStorage.generateId(),
+      id,
       title,
       color,
-      selector: generateSelector(this.clickedElement)!,
+      selector,
       url: window.location.href,
-      order: Date.now(),
+      order,
     };
 
     await HopsStorage.addHop(hop);
@@ -206,7 +235,7 @@ class HopsManager {
     try {
       element.parentNode?.insertBefore(icon, element);
     } catch (error) {
-      console.error('Failed to insert hop icon: ', error);
+      log('error', 'Failed to insert hop icon: ', error);
     }
   }
 
@@ -226,13 +255,21 @@ class HopsManager {
 
   private closeModal() {
     if (this.modal) {
+      const listeners = (this.modal as any)._listeners;
+      if (listeners) {
+        listeners.forEach(({ element, handler, event }: { element: Document | Element, handler: (e: any) => void, event: string }) => {
+          if (element.removeEventListener) {
+            element.removeEventListener(event, handler);
+          }
+        });
+      }
       this.modal.remove();
       this.modal = null;
     }
   }
 
   private addModalStyles() {
-    if (document.getElementById('bookmark-modal-styles')) return;
+    if (document.getElementById('hop-modal-styles')) return;
 
     const styles = document.createElement('style');
     styles.id = 'hop-modal-styles';
@@ -279,6 +316,62 @@ class HopsManager {
       subtree: true
     });
   }
+
+  private setupHistoryListener() {
+    const originalPushState = history.pushState;
+    const originalReplaceState = history.replaceState;
+
+    const onUrlChange = () => {
+      const newUrl = window.location.href;
+      if (newUrl !== this.currentUrl) {
+        this.currentUrl = newUrl;
+        setTimeout(() => {
+          this.loadExistingHops();
+        }, 500);
+      }
+    };
+
+    if (!history.pushState.toString().includes('onUrlChange')) {
+      history.pushState = function(...args) {
+        originalPushState.apply(history, args);
+        onUrlChange();
+      };
+
+      history.replaceState = function(...args) {
+        originalReplaceState.apply(history, args);
+        onUrlChange();
+      };
+    }
+
+    window.addEventListener('popstate', onUrlChange);
+  }
+
+  private setupVisibilityListener() {
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        setTimeout(() => {
+          const newUrl = window.location.href;
+          if (newUrl !== this.currentUrl || !this.isInitialized) {
+            this.currentUrl = newUrl;
+            this.loadExistingHops();
+          }
+        }, 500);
+      }
+    });
+
+    window.addEventListener('focus', () => {
+      setTimeout(() => {
+        const newUrl = window.location.href;
+        if (newUrl !== this.currentUrl || !this.isInitialized) {
+          this.currentUrl = newUrl;
+          this.loadExistingHops();
+        }
+      }, 500);
+    });
+  }
 }
 
-new HopsManager();
+if (!(window as any).kangoHopsManagerInitialized) {
+  (window as any).kangoHopsManagerInitialized = true;
+  new HopsManager();
+}

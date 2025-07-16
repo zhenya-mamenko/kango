@@ -1,13 +1,14 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extension_name__",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "__MSG_extension_description__",
   "permissions": [
     "storage",
     "contextMenus",
     "activeTab",
-    "sidePanel"
+    "sidePanel",
+    "scripting"
   ],
   "host_permissions": [
     "http://*/*",
@@ -16,19 +17,6 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["content.js"],
-      "exclude_matches": [
-        "http://*/",
-        "https://*/",
-        "*://chrome.google.com/*",
-        "*://chromewebstore.google.com/*",
-        "*://addons.mozilla.org/*"
-      ]
-    }
-  ],
   "side_panel": {
     "default_path": "sidebar.html"
   },
