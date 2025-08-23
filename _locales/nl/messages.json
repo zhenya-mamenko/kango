@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Annuleren",
     "description": "Knoptekst om het toevoegen van een sprong in de modal te annuleren"
+  },
+  "load_hops": {
+    "message": "Sprongen laden uit bestand",
+    "description": "Knoptekst om sprongen uit een bestand te laden"
+  },
+  "save_hops": {
+    "message": "Sprongen opslaan in bestand",
+    "description": "Knoptekst om sprongen op te slaan in een bestand"
   }
 }

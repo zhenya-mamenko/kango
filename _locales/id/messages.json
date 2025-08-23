@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Batal",
     "description": "Teks tombol untuk membatalkan penambahan lompatan di modal"
+  },
+  "load_hops": {
+    "message": "Muat lompatan dari berkas",
+    "description": "Teks tombol untuk memuat lompatan dari berkas"
+  },
+  "save_hops": {
+    "message": "Simpan lompatan ke berkas",
+    "description": "Teks tombol untuk menyimpan lompatan ke berkas"
   }
 }

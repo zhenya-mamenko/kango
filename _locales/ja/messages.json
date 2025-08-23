@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "キャンセル",
     "description": "モーダルでジャンプ追加をキャンセルするボタンのテキスト"
+  },
+  "load_hops": {
+    "message": "ファイルからジャンプを読み込み",
+    "description": "ファイルからジャンプを読み込むボタンのテキスト"
+  },
+  "save_hops": {
+    "message": "ジャンプをファイルに保存",
+    "description": "ジャンプをファイルに保存するボタンのテキスト"
   }
 }

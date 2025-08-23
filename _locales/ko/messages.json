@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "취소",
     "description": "모달에서 점프 추가를 취소하는 버튼 텍스트"
+  },
+  "load_hops": {
+    "message": "파일에서 점프 로드",
+    "description": "파일에서 점프를 로드하는 버튼 텍스트"
+  },
+  "save_hops": {
+    "message": "파일에 점프 저장",
+    "description": "파일에 점프를 저장하는 버튼 텍스트"
   }
 }

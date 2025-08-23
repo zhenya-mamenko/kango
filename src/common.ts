@@ -34,13 +34,19 @@ export interface Hop {
 export class HopsStorage {
   private static readonly STORAGE_KEY = 'kanGO_hops';
 
+  static async addHop(hop: Hop): Promise<void> {
+    const hops = await this.getHops('all');
+    hops.push(hop);
+    await this.setHops(hops);
+  }
+
   static async getHops(url?: string): Promise<Hop[]> {
     let hops: Hop[] = [];
     try {
       const result = await chrome.storage.local.get(this.STORAGE_KEY);
       hops = result[this.STORAGE_KEY] || [];
     } catch (error) {
-      log('error', 'Error getting hops from storage: ', error);
+      log('error', 'kanGO: Error getting hops from storage: ', error);
     }
 
     if (url) {
@@ -50,10 +56,18 @@ export class HopsStorage {
     return [];
   }
 
-  static async addHop(hop: Hop): Promise<void> {
+  static generateId(): string {
+    return Date.now().toString(36) + Math.random().toString(36).substring(2);
+  }
+
+  static async loadFromJson(json: string): Promise<void> {
     const hops = await this.getHops('all');
-    hops.push(hop);
-    await this.setHops(hops);
+    try {
+      const loadedHops = (JSON.parse(json) as Hop[]).filter(loadedHop => !hops.some(hop => hop.id === loadedHop.id));
+      await this.setHops([...loadedHops, ...hops].sort((a, b) => a.url.localeCompare(b.url) || a.order - b.order));
+    } catch (error) {
+      log('error', 'kanGO: Error parsing JSON: ', error);
+    }
   }
 
   static async removeHop(id: string): Promise<void> {
@@ -62,12 +76,13 @@ export class HopsStorage {
     await this.setHops(filtered);
   }
 
-  static async setHops(hops: Hop[]): Promise<void> {
-    await chrome.storage.local.set({ [this.STORAGE_KEY]: hops });
+  static async saveToJson(): Promise<string> {
+    const hops = await this.getHops('all');
+    return JSON.stringify(hops);
   }
 
-  static generateId(): string {
-    return Date.now().toString(36) + Math.random().toString(36).substring(2);
+  static async setHops(hops: Hop[]): Promise<void> {
+    await chrome.storage.local.set({ [this.STORAGE_KEY]: hops });
   }
 }
 

@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Anulează",
     "description": "Textul butonului pentru anularea adăugării unei sărituri în modal"
+  },
+  "load_hops": {
+    "message": "Încarcă sărituri din fișier",
+    "description": "Textul butonului pentru încărcarea săriturilor din fișier"
+  },
+  "save_hops": {
+    "message": "Salvează sărituri în fișier",
+    "description": "Textul butonului pentru salvarea săriturilor în fișier"
   }
 }

@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "取消",
     "description": "modal中取消添加跳转按钮的文本"
+  },
+  "load_hops": {
+    "message": "从文件加载跳转",
+    "description": "从文件加载跳转按钮的文本"
+  },
+  "save_hops": {
+    "message": "保存跳转到文件",
+    "description": "保存跳转到文件按钮的文本"
   }
 }

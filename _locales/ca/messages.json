@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Cancel·la",
     "description": "Text del botó per cancel·lar l'afegiment d'un salt en el modal"
+  },
+  "load_hops": {
+    "message": "Carregar salts des d'arxiu",
+    "description": "Text del botó per carregar salts des d'un arxiu"
+  },
+  "save_hops": {
+    "message": "Guardar salts a l'arxiu",
+    "description": "Text del botó per guardar salts a un arxiu"
   }
 }

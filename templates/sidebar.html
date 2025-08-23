@@ -151,6 +151,73 @@
     body.dragging-active .drag-handle {
       cursor: grabbing !important;
     }
+
+    .load-save-panel {
+      margin-bottom: 16px;
+      padding: 0px;
+    }
+
+    .load-save-buttons {
+      display: flex;
+      gap: 8px;
+      justify-content: end;
+    }
+
+    .load-save-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      background: white;
+      color: #374151;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .load-save-btn:hover {
+      background: #f3f4f6;
+      border-color: #9ca3af;
+    }
+
+    .load-save-btn:active {
+      transform: translateY(1px);
+    }
+
+    .load-btn:hover {
+      background: #dbeafe;
+      border-color: #93c5fd;
+      color: #1d4ed8;
+    }
+
+    .save-btn:hover {
+      background: #dcfce7;
+      border-color: #86efac;
+      color: #166534;
+    }
+
+    .load-save-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .load-save-btn:disabled {
+      background: #f3f4f6;
+      border-color: #e5e7eb;
+      color: #9ca3af;
+      cursor: not-allowed;
+    }
+
+    .load-save-btn:disabled:hover {
+      background: #f3f4f6;
+      border-color: #e5e7eb;
+      color: #9ca3af;
+      transform: none;
+    }
   </style>
 </head>
 <body>

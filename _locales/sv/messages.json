@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Avbryt",
     "description": "Knapptext för att avbryta tillägg av hopp i modal"
+  },
+  "load_hops": {
+    "message": "Ladda hopp från fil",
+    "description": "Knapptext för att ladda hopp från fil"
+  },
+  "save_hops": {
+    "message": "Spara hopp till fil",
+    "description": "Knapptext för att spara hopp till fil"
   }
 }

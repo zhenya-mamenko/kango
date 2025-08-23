@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Annuler",
     "description": "Texte du bouton pour annuler l'ajout d'un saut dans la fenêtre modale"
+  },
+  "load_hops": {
+    "message": "Charger les sauts depuis un fichier",
+    "description": "Texte du bouton pour charger les sauts depuis un fichier"
+  },
+  "save_hops": {
+    "message": "Enregistrer les sauts dans un fichier",
+    "description": "Texte du bouton pour enregistrer les sauts dans un fichier"
   }
 }

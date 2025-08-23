@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Anuluj",
     "description": "Tekst przycisku do anulowania dodania skoku w oknie modalnym"
+  },
+  "load_hops": {
+    "message": "Wczytaj skoki z pliku",
+    "description": "Tekst przycisku do wczytywania skoków z pliku"
+  },
+  "save_hops": {
+    "message": "Zapisz skoki do pliku",
+    "description": "Tekst przycisku do zapisywania skoków do pliku"
   }
 }

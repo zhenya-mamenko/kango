@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "取消",
     "description": "modal 中取消新增跳躍按鈕的文字"
+  },
+  "load_hops": {
+    "message": "從檔案載入跳躍",
+    "description": "從檔案載入跳躍按鈕的文字"
+  },
+  "save_hops": {
+    "message": "儲存跳躍至檔案",
+    "description": "儲存跳躍至檔案按鈕的文字"
   }
 }

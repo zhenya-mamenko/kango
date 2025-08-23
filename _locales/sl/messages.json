@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Prekliči",
     "description": "Besedilo gumba za preklic dodajanja skoka v modalu"
+  },
+  "load_hops": {
+    "message": "Naloži skoke iz datoteke",
+    "description": "Besedilo gumba za nalaganje skokov iz datoteke"
+  },
+  "save_hops": {
+    "message": "Shrani skoke v datoteko",
+    "description": "Besedilo gumba za shranjevanje skokov v datoteko"
   }
 }

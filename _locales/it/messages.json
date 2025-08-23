@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Annulla",
     "description": "Testo del pulsante per annullare l'aggiunta di un salto nella modale"
+  },
+  "load_hops": {
+    "message": "Carica salti da file",
+    "description": "Testo del pulsante per caricare salti da un file"
+  },
+  "save_hops": {
+    "message": "Salva salti su file",
+    "description": "Testo del pulsante per salvare salti su un file"
   }
 }

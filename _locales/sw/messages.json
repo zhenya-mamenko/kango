@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Ghairi",
     "description": "Maandishi ya kitufe cha kughairi kuongeza mji kwenye modal"
+  },
+  "load_hops": {
+    "message": "Pakia miji kutoka kwenye faili",
+    "description": "Maandishi ya kitufe cha kupakia miji kutoka kwenye faili"
+  },
+  "save_hops": {
+    "message": "Hifadhi miji kwenye faili",
+    "description": "Maandishi ya kitufe cha kuhifadhi miji kwenye faili"
   }
 }

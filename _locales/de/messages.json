@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Abbrechen",
     "description": "Buttontext zum Abbrechen des Hinzufügens eines Sprungs im Modal"
+  },
+  "load_hops": {
+    "message": "Sprünge aus Datei laden",
+    "description": "Buttontext zum Laden von Sprüngen aus einer Datei"
+  },
+  "save_hops": {
+    "message": "Sprünge in Datei speichern",
+    "description": "Buttontext zum Speichern von Sprüngen in eine Datei"
   }
 }
