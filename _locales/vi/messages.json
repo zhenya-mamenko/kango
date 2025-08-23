@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Hủy",
     "description": "Văn bản nút để hủy thêm nhảy trong modal"
+  },
+  "load_hops": {
+    "message": "Tải nhảy từ tập tin",
+    "description": "Văn bản nút để tải nhảy từ tập tin"
+  },
+  "save_hops": {
+    "message": "Lưu nhảy vào tập tin",
+    "description": "Văn bản nút để lưu nhảy vào tập tin"
   }
 }

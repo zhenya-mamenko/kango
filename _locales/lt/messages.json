@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Atšaukti",
     "description": "Mygtuko tekstas šuolio pridėjimo atšaukimui modalyje"
+  },
+  "load_hops": {
+    "message": "Įkelti šuolius iš failo",
+    "description": "Mygtuko tekstas šuolių įkėlimui iš failo"
+  },
+  "save_hops": {
+    "message": "Išsaugoti šuolius į failą",
+    "description": "Mygtuko tekstas šuolių išsaugojimui į failą"
   }
 }

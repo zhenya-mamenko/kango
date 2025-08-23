@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Odustani",
     "description": "Tekst gumba za odustajanje od dodavanja skoka u modalu"
+  },
+  "load_hops": {
+    "message": "Učitaj skokove iz datoteke",
+    "description": "Tekst gumba za učitavanje skokova iz datoteke"
+  },
+  "save_hops": {
+    "message": "Spremi skokove u datoteku",
+    "description": "Tekst gumba za spremanje skokova u datoteku"
   }
 }

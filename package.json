@@ -1,6 +1,6 @@
 {
   "name": "kango-chrome-extension",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "kanGO — Chrome extension for convenient fast hops for your long pages",
   "type": "module",
   "scripts": {

@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Mégse",
     "description": "Gombszöveg az ugrás hozzáadásának megszakításához a modálban"
+  },
+  "load_hops": {
+    "message": "Ugrások betöltése fájlból",
+    "description": "Gombszöveg az ugrások betöltéséhez fájlból"
+  },
+  "save_hops": {
+    "message": "Ugrások mentése fájlba",
+    "description": "Gombszöveg az ugrások mentéséhez fájlba"
   }
 }

@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Zrušiť",
     "description": "Text tlačidla na zrušenie pridania skoku v modálnom okne"
+  },
+  "load_hops": {
+    "message": "Načítať skoky zo súboru",
+    "description": "Text tlačidla na načítanie skokov zo súboru"
+  },
+  "save_hops": {
+    "message": "Uložiť skoky do súboru",
+    "description": "Text tlačidla na uloženie skokov do súboru"
   }
 }

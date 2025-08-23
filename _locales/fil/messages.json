@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Kanselahin",
     "description": "Teksto ng button para kanselahin ang pagdagdag ng lundag sa modal"
+  },
+  "load_hops": {
+    "message": "I-load ang mga lundag mula sa file",
+    "description": "Teksto ng button para i-load ang mga lundag mula sa file"
+  },
+  "save_hops": {
+    "message": "I-save ang mga lundag sa file",
+    "description": "Teksto ng button para i-save ang mga lundag sa file"
   }
 }

@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "İptal",
     "description": "Modalda atlama eklemeyi iptal etme buton metni"
+  },
+  "load_hops": {
+    "message": "Dosyadan atlamaları yükle",
+    "description": "Dosyadan atlamaları yükleme buton metni"
+  },
+  "save_hops": {
+    "message": "Atlamaları dosyaya kaydet",
+    "description": "Atlamaları dosyaya kaydetme buton metni"
   }
 }

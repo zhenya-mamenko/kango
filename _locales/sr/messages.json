@@ -32,7 +32,15 @@
     "description": "Tekst dugmeta za dodavanje novog skoka u modalu"
   },
   "cancel_button": {
-    "message": "Otkaži",
-    "description": "Tekst dugmeta za otkazivanje dodavanja skoka u modalu"
+    "message": "Откажи",
+    "description": "Текст дугмета за отказивање додавања скока у модалу"
+  },
+  "load_hops": {
+    "message": "Учитај скокове из датотеке",
+    "description": "Текст дугмета за учитавање скокова из датотеке"
+  },
+  "save_hops": {
+    "message": "Сачувај скокове у датотеку",
+    "description": "Текст дугмета за чување скокова у датотеку"
   }
 }

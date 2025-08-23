@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Peruuta",
     "description": "Nappiteksti hypyn lisäämisen peruuttamiseen modaalissa"
+  },
+  "load_hops": {
+    "message": "Lataa hypyt tiedostosta",
+    "description": "Nappiteksti hyppyjen lataamiseen tiedostosta"
+  },
+  "save_hops": {
+    "message": "Tallenna hypyt tiedostoon",
+    "description": "Nappiteksti hyppyjen tallentamiseen tiedostoon"
   }
 }

@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Avbryt",
     "description": "Knappetekst for å avbryte å legge til hopp i modal"
+  },
+  "load_hops": {
+    "message": "Last inn hopp fra fil",
+    "description": "Knappetekst for å laste inn hopp fra fil"
+  },
+  "save_hops": {
+    "message": "Lagre hopp til fil",
+    "description": "Knappetekst for å lagre hopp til fil"
   }
 }

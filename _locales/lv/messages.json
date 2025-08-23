@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Atcelt",
     "description": "Pogas teksts lēciena pievienošanas atcelšanai modālajā logā"
+  },
+  "load_hops": {
+    "message": "Ielādēt lēcienus no faila",
+    "description": "Pogas teksts lēcienu ielādei no faila"
+  },
+  "save_hops": {
+    "message": "Saglabāt lēcienus failā",
+    "description": "Pogas teksts lēcienu saglabāšanai failā"
   }
 }

@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Tühista",
     "description": "Nupu tekst hüppe lisamise tühistamiseks modaalis"
+  },
+  "load_hops": {
+    "message": "Laadi hüpped failist",
+    "description": "Nupu tekst hüpete laadimiseks failist"
+  },
+  "save_hops": {
+    "message": "Salvesta hüpped faili",
+    "description": "Nupu tekst hüpete salvestamiseks faili"
   }
 }

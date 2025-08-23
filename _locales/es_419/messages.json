@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Cancelar",
     "description": "Texto del botón para cancelar la adición de un salto en el modal"
+  },
+  "load_hops": {
+    "message": "Cargar saltos desde archivo",
+    "description": "Texto del botón para cargar saltos desde un archivo"
+  },
+  "save_hops": {
+    "message": "Guardar saltos en archivo",
+    "description": "Texto del botón para guardar saltos en un archivo"
   }
 }

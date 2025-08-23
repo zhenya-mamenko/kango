@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Annuller",
     "description": "Knaptekst for at annullere tilføjelse af spring i modal"
+  },
+  "load_hops": {
+    "message": "Indlæs spring fra fil",
+    "description": "Knaptekst for at indlæse spring fra en fil"
+  },
+  "save_hops": {
+    "message": "Gem spring til fil",
+    "description": "Knaptekst for at gemme spring til en fil"
   }
 }

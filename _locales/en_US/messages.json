@@ -34,5 +34,13 @@
   "cancel_button": {
     "message": "Cancel",
     "description": "Button text to cancel adding a hop in the modal"
+  },
+  "load_hops": {
+    "message": "Load Hops from file",
+    "description": "Button text to load hops from a file"
+  },
+  "save_hops": {
+    "message": "Save Hops to file",
+    "description": "Button text to save hops to a file"
   }
 }
