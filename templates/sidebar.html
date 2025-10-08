@@ -4,18 +4,85 @@
   <meta charset="utf-8">
   <title>kanGO</title>
   <style>
+    :root {
+      --bg-primary: #fafafa;
+      --bg-secondary: white;
+      --bg-tertiary: #f3f4f6;
+      --text-primary: #111827;
+      --text-secondary: #374151;
+      --text-muted: #6b7280;
+      --border-primary: #e5e7eb;
+      --border-secondary: #d1d5db;
+      --border-hover: #9ca3af;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+      --overlay-bg: rgba(0, 0, 0, 0.5);
+      
+      --btn-primary: #3b82f6;
+      --btn-primary-hover: #2563eb;
+      --btn-cancel: #f3f4f6;
+      --btn-cancel-hover: #e5e7eb;
+      --btn-cancel-text: #374151;
+      --btn-delete: #ef4444;
+      --btn-delete-hover: #dc2626;
+      --btn-disabled: #9ca3af;
+      
+      --load-btn-hover-bg: #dbeafe;
+      --load-btn-hover-border: #93c5fd;
+      --load-btn-hover-text: #1d4ed8;
+      --save-btn-hover-bg: #dcfce7;
+      --save-btn-hover-border: #86efac;
+      --save-btn-hover-text: #166534;
+      
+      --drag-handle: #d1d5db;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-primary: #111827;
+        --bg-secondary: #1f2937;
+        --bg-tertiary: #374151;
+        --text-primary: #f9fafb;
+        --text-secondary: #e5e7eb;
+        --text-muted: #9ca3af;
+        --border-primary: #374151;
+        --border-secondary: #4b5563;
+        --border-hover: #6b7280;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+        --overlay-bg: rgba(0, 0, 0, 0.7);
+        
+        --btn-primary: #3b82f6;
+        --btn-primary-hover: #60a5fa;
+        --btn-cancel: #374151;
+        --btn-cancel-hover: #4b5563;
+        --btn-cancel-text: #e5e7eb;
+        --btn-delete: #ef4444;
+        --btn-delete-hover: #f87171;
+        --btn-disabled: #6b7280;
+        
+        --load-btn-hover-bg: #1e3a8a;
+        --load-btn-hover-border: #3b82f6;
+        --load-btn-hover-text: #93c5fd;
+        --save-btn-hover-bg: #14532d;
+        --save-btn-hover-border: #22c55e;
+        --save-btn-hover-text: #86efac;
+        
+        --drag-handle: #6b7280;
+      }
+    }
+
     body {
       margin: 0;
       padding: 16px;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #fafafa;
+      background: var(--bg-primary);
       min-height: 100vh;
+      color: var(--text-primary);
     }
 
     .empty-state {
       text-align: center;
       padding: 40px 20px;
-      color: #6b7280;
+      color: var(--text-muted);
     }
 
     .empty-state svg {
@@ -32,11 +99,11 @@
     }
 
     .item {
-      background: white;
+      background: var(--bg-secondary);
       border-radius: 8px;
       margin-bottom: 8px;
       padding: 12px;
-      border: 1px solid #e5e7eb;
+      border: 1px solid var(--border-primary);
       cursor: pointer;
       transition: all 0.2s;
       position: relative;
@@ -44,8 +111,8 @@
     }
 
     .item:hover {
-      border-color: #d1d5db;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border-color: var(--border-secondary);
+      box-shadow: 0 1px 3px var(--shadow-color);
     }
 
     .content {
@@ -74,14 +141,14 @@
 
     .title {
       font-weight: 500;
-      color: #111827;
+      color: var(--text-primary);
       margin-bottom: 4px;
       word-wrap: break-word;
     }
 
     .preview {
       font-size: 12px;
-      color: #6b7280;
+      color: var(--text-muted);
       line-height: 1.4;
       word-wrap: break-word;
     }
@@ -100,7 +167,7 @@
     }
 
     .delete-btn {
-      background: #ef4444;
+      background: var(--btn-delete);
       border: none;
       border-radius: 4px;
       width: 16px;
@@ -115,7 +182,7 @@
     }
 
     .delete-btn:hover {
-      background: #dc2626;
+      background: var(--btn-delete-hover);
     }
 
     .drag-handle {
@@ -125,7 +192,7 @@
       transform: translateY(-50%);
       width: 6px;
       height: 60%;
-      background: #d1d5db;
+      background: var(--drag-handle);
       border-radius: 3px;
       opacity: 0;
       transition: opacity 0.2s;
@@ -169,9 +236,9 @@
       gap: 6px;
       padding: 8px;
       border-radius: 6px;
-      border: 1px solid #d1d5db;
-      background: white;
-      color: #374151;
+      border: 1px solid var(--border-secondary);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
       font-size: 13px;
       font-weight: 500;
       cursor: pointer;
@@ -180,8 +247,8 @@
     }
 
     .load-save-btn:hover {
-      background: #f3f4f6;
-      border-color: #9ca3af;
+      background: var(--bg-tertiary);
+      border-color: var(--border-hover);
     }
 
     .load-save-btn:active {
@@ -189,15 +256,15 @@
     }
 
     .load-btn:hover {
-      background: #dbeafe;
-      border-color: #93c5fd;
-      color: #1d4ed8;
+      background: var(--load-btn-hover-bg);
+      border-color: var(--load-btn-hover-border);
+      color: var(--load-btn-hover-text);
     }
 
     .save-btn:hover {
-      background: #dcfce7;
-      border-color: #86efac;
-      color: #166534;
+      background: var(--save-btn-hover-bg);
+      border-color: var(--save-btn-hover-border);
+      color: var(--save-btn-hover-text);
     }
 
     .load-save-btn svg {
@@ -206,16 +273,16 @@
     }
 
     .load-save-btn:disabled {
-      background: #f3f4f6;
-      border-color: #e5e7eb;
-      color: #9ca3af;
+      background: var(--bg-tertiary);
+      border-color: var(--border-primary);
+      color: var(--btn-disabled);
       cursor: not-allowed;
     }
 
     .load-save-btn:disabled:hover {
-      background: #f3f4f6;
-      border-color: #e5e7eb;
-      color: #9ca3af;
+      background: var(--bg-tertiary);
+      border-color: var(--border-primary);
+      color: var(--btn-disabled);
       transform: none;
     }
   </style>

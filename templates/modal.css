@@ -1,3 +1,51 @@
+:root {
+  --bg-primary: #fafafa;
+  --bg-secondary: white;
+  --bg-tertiary: #f3f4f6;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --border-primary: #e5e7eb;
+  --border-secondary: #d1d5db;
+  --border-hover: #9ca3af;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  
+  --btn-primary: #3b82f6;
+  --btn-primary-hover: #2563eb;
+  --btn-cancel: #f3f4f6;
+  --btn-cancel-hover: #e5e7eb;
+  --btn-cancel-text: #374151;
+  --btn-delete: #ef4444;
+  --btn-delete-hover: #dc2626;
+  --btn-disabled: #9ca3af;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --bg-tertiary: #374151;
+    --text-primary: #f9fafb;
+    --text-secondary: #e5e7eb;
+    --text-muted: #9ca3af;
+    --border-primary: #374151;
+    --border-secondary: #4b5563;
+    --border-hover: #6b7280;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --overlay-bg: rgba(0, 0, 0, 0.7);
+    
+    --btn-primary: #3b82f6;
+    --btn-primary-hover: #60a5fa;
+    --btn-cancel: #374151;
+    --btn-cancel-hover: #4b5563;
+    --btn-cancel-text: #e5e7eb;
+    --btn-delete: #ef4444;
+    --btn-delete-hover: #f87171;
+    --btn-disabled: #6b7280;
+  }
+}
+
 .hop-modal {
   position: fixed;
   top: 0;
@@ -13,34 +61,34 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--overlay-bg);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hop-modal .content {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 8px;
   padding: 24px;
   max-width: 400px;
   width: 90%;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px var(--shadow-color);
 }
 
 .hop-modal h3 {
   margin: 0 0 16px 0;
   font-size: 18px;
-  color: #111827;
+  color: var(--text-primary);
 }
 
 .hop-modal .text-preview {
-  background: #f3f4f6;
+  background: var(--bg-tertiary);
   padding: 12px;
   border-radius: 4px;
   margin-bottom: 16px;
   font-size: 14px;
-  color: #6b7280;
+  color: var(--text-muted);
 }
 
 .hop-modal .form-group {
@@ -51,16 +99,18 @@
   display: block;
   margin-bottom: 6px;
   font-weight: 500;
-  color: #374151;
+  color: var(--text-secondary);
 }
 
 .hop-modal .form-group input {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-secondary);
   border-radius: 4px;
   font-size: 14px;
   box-sizing: border-box;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .hop-modal .color-picker {
@@ -79,7 +129,7 @@
 }
 
 .hop-modal .color-option.selected {
-  border-color: #374151;
+  border-color: var(--text-secondary);
 }
 
 .hop-modal .modal-buttons {
@@ -99,24 +149,24 @@
 }
 
 .hop-modal .btn-cancel {
-  background: #f3f4f6;
-  color: #374151;
+  background: var(--btn-cancel);
+  color: var(--btn-cancel-text);
 }
 
 .hop-modal .btn-cancel:hover {
-  background: #e5e7eb;
+  background: var(--btn-cancel-hover);
 }
 
 .hop-modal .btn-add {
-  background: #3b82f6;
+  background: var(--btn-primary);
   color: white;
 }
 
 .hop-modal .btn-add:hover:not(:disabled) {
-  background: #2563eb;
+  background: var(--btn-primary-hover);
 }
 
 .hop-modal .btn-add:disabled {
-  background: #9ca3af;
+  background: var(--btn-disabled);
   cursor: not-allowed;
 }
